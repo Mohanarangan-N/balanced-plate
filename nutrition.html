@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Analysis - Balanced Plate 🥗</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">🥗 Balanced Plate</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="meal.html">Generate Meal</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="nutrition.html" class="active">Nutrition Analysis</a></li>
+    <li><a href="progress.html">Progress</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<!-- NUTRITION ANALYSIS SECTION -->
+<section class="nutrition-section container">
+  <h1>Your Nutrition Analysis</h1>
+  <p>Detailed breakdown of your meals and macros for today.</p>
+
+  <!-- SELECT MEAL FOR ANALYSIS -->
+  <div class="meal-select">
+    <label for="select-meal">Select Meal:</label>
+    <select id="select-meal">
+      <option value="">Select a meal</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+      <option value="Snack">Snack</option>
+    </select>
+    <button class="btn small" id="view-meal-btn">View Nutrition</button>
+  </div>
+
+  <!-- NUTRITION DETAILS -->
+  <div class="nutrition-card card">
+    <h2 id="meal-name">Meal Name</h2>
+    <p id="meal-ingredients">Ingredients: --</p>
+    <p id="meal-calories">Calories: 0 kcal</p>
+    <p id="meal-protein">Protein: 0g</p>
+    <p id="meal-carbs">Carbs: 0g</p>
+    <p id="meal-fats">Fats: 0g</p>
+    <p id="meal-fiber">Fiber: 0g</p>
+  </div>
+
+  <!-- VISUAL PROGRESS BARS -->
+  <div class="nutrition-progress">
+    <h2>Macro Progress</h2>
+    <div class="progress-bar">
+      <label>Protein</label>
+      <div class="bar"><div id="protein-bar" style="width: 0%"></div></div>
+    </div>
+    <div class="progress-bar">
+      <label>Carbs</label>
+      <div class="bar"><div id="carbs-bar" style="width: 0%"></div></div>
+    </div>
+    <div class="progress-bar">
+      <label>Fats</label>
+      <div class="bar"><div id="fats-bar" style="width: 0%"></div></div>
+    </div>
+    <div class="progress-bar">
+      <label>Fiber</label>
+      <div class="bar"><div id="fiber-bar" style="width: 0%"></div></div>
+    </div>
+  </div>
+
+  <!-- AI INSIGHTS -->
+  <div class="ai-insights">
+    <h2>Insights & Tips</h2>
+    <ul id="ai-tips">
+      <li>Try adding 1 serving of vegetables to your lunch for fiber.</li>
+      <li>You are under your protein target today — add lentils or eggs.</li>
+      <li>Stay hydrated! Drink at least 2 more glasses of water.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Balanced Plate | Not a medical diagnosis</p>
+  <p><a href="about.html">About</a> | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
