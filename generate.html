@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Meal | Balanced Plate</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav>
+  <h2>🥗 Balanced Plate</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="generate.html">Generate</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<section class="container">
+  <h2>Generate Your Balanced Meal</h2>
+
+  <form id="mealForm">
+    <label>Ingredients you have</label>
+    <textarea id="ingredients" required></textarea>
+
+    <label>Diet Type</label>
+    <select id="diet">
+      <option>Vegetarian</option>
+      <option>Non-Vegetarian</option>
+      <option>Vegan</option>
+    </select>
+
+    <label>Health Goal</label>
+    <select id="goal">
+      <option>Balanced Diet</option>
+      <option>Weight Loss</option>
+      <option>Muscle Gain</option>
+    </select>
+
+    <button class="btn" type="submit">Generate Meal</button>
+  </form>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
