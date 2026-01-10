@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Setup - Balanced Plate 🥗</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">🥗 Balanced Plate</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="meal.html">Generate Meal</a></li>
+    <li><a href="login.html">Login / Signup</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<!-- PROFILE SETUP FORM -->
+<section class="profile-section container">
+  <h1>Set Up Your Profile</h1>
+  <p>Help us personalize your meal plans and track your nutrition.</p>
+
+  <form id="profile-form">
+
+    <!-- Personal Info -->
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter your age" min="1" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="height">Height (cm)</label>
+      <input type="number" id="height" placeholder="Enter your height in cm" required>
+
+      <label for="weight">Weight (kg)</label>
+      <input type="number" id="weight" placeholder="Enter your weight in kg" required>
+    </fieldset>
+
+    <!-- Lifestyle Info -->
+    <fieldset>
+      <legend>Lifestyle Details</legend>
+
+      <label for="activity-level">Activity Level</label>
+      <select id="activity-level" required>
+        <option value="">Select</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <label for="sleep-hours">Average Sleep Hours</label>
+      <input type="number" id="sleep-hours" placeholder="Hours per day" min="1" max="24" required>
+    </fieldset>
+
+    <!-- Health Goals -->
+    <fieldset>
+      <legend>Health Goals</legend>
+      <select id="health-goal" required>
+        <option value="">Select your goal</option>
+        <option value="Balanced">Balanced Diet</option>
+        <option value="Weight Loss">Weight Loss</option>
+        <option value="Weight Gain">Weight Gain</option>
+        <option value="Muscle Gain">Muscle Gain</option>
+        <option value="Diabetes Friendly">Diabetes Friendly</option>
+        <option value="Heart Health">Heart Health</option>
+      </select>
+    </fieldset>
+
+    <!-- Dietary Preferences -->
+    <fieldset>
+      <legend>Dietary Preferences</legend>
+
+      <label for="diet-preference">Diet Type</label>
+      <select id="diet-preference" required>
+        <option value="">Select</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Eggetarian">Eggetarian</option>
+      </select>
+
+      <label for="allergies">Allergies / Restrictions</label>
+      <input type="text" id="allergies" placeholder="E.g., Gluten, Nuts, Lactose">
+    </fieldset>
+
+    <button type="submit" class="btn">Save & Continue</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Balanced Plate | Not a medical diagnosis</p>
+  <p><a href="about.html">About</a> | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
