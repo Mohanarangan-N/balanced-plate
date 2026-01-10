@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery List - Balanced Plate 🥗</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">🥗 Balanced Plate</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="meal.html">Generate Meal</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="grocery.html" class="active">Grocery List</a></li>
+    <li><a href="settings.html">Settings</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<!-- GROCERY LIST SECTION -->
+<section class="grocery-section container">
+  <h1>Your Grocery List</h1>
+  <p>Auto-generated based on your planned meals.</p>
+
+  <!-- CATEGORY FILTER -->
+  <div class="category-filter">
+    <label for="category-select">Filter by Category:</label>
+    <select id="category-select">
+      <option value="All">All</option>
+      <option value="Vegetables">Vegetables</option>
+      <option value="Fruits">Fruits</option>
+      <option value="Protein">Protein</option>
+      <option value="Grains">Grains</option>
+      <option value="Dairy">Dairy</option>
+      <option value="Others">Others</option>
+    </select>
+  </div>
+
+  <!-- GROCERY ITEMS -->
+  <div class="grocery-items">
+    <div class="category">
+      <h2>Vegetables</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="spinach">
+          <label for="spinach">Spinach - 200g</label>
+        </li>
+        <li>
+          <input type="checkbox" id="carrot">
+          <label for="carrot">Carrot - 3 pcs</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>Protein</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="chicken">
+          <label for="chicken">Chicken Breast - 500g</label>
+        </li>
+        <li>
+          <input type="checkbox" id="eggs">
+          <label for="eggs">Eggs - 12 pcs</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>Grains</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="oats">
+          <label for="oats">Oats - 500g</label>
+        </li>
+        <li>
+          <input type="checkbox" id="rice">
+          <label for="rice">Rice - 1kg</label>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Add more categories as needed -->
+  </div>
+
+  <!-- ACTION BUTTONS -->
+  <div class="grocery-actions">
+    <button class="btn" id="mark-purchased-btn">Mark Selected as Purchased</button>
+    <button class="btn" id="download-btn">Download / Print List</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Balanced Plate | Not a medical diagnosis</p>
+  <p><a href="about.html">About</a> | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
 
