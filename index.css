@@ -1,67 +1,271 @@
-body {
+/* -----------------------------
+   GENERAL RESET & BASE
+------------------------------ */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f9f8;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+a:hover {
+  color: #388e3c;
+}
+
+/* -----------------------------
+   CONTAINER
+------------------------------ */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* -----------------------------
+   NAVIGATION
+------------------------------ */
 nav {
-  background: #2e7d32;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: #4caf50;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 10px;
 }
 
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: #e8f5e9;
+nav ul li a.active, nav ul li a:hover {
+  background-color: #388e3c;
+  border-radius: 5px;
 }
 
-.container {
-  max-width: 600px;
-  margin: 3rem auto;
-  padding: 2rem;
+/* -----------------------------
+   HEADINGS
+------------------------------ */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-textarea, select {
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* -----------------------------
+   FORMS
+------------------------------ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
   width: 100%;
-  padding: 0.7rem;
-  margin-top: 0.5rem;
 }
 
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+label {
+  font-weight: 500;
+}
+
+/* -----------------------------
+   BUTTONS
+------------------------------ */
 .btn {
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background: #2e7d32;
-  color: white;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
 }
 
+.btn:hover {
+  background-color: #388e3c;
+}
+
+.btn.small {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* -----------------------------
+   CARDS
+------------------------------ */
 .card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+/* -----------------------------
+   SECTIONS
+------------------------------ */
+section {
+  margin: 20px 0;
+}
+
+/* -----------------------------
+   LOGIN / SIGNUP
+------------------------------ */
+.login-section .form-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.form-note {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* -----------------------------
+   DASHBOARD / CARDS
+------------------------------ */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cards .card {
+  flex: 1 1 200px;
+}
+
+/* -----------------------------
+   MEAL / NUTRITION
+------------------------------ */
+.meal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.progress-bar {
+  margin: 10px 0;
+}
+
+.progress-bar label {
+  font-weight: 500;
+}
+
+.progress-bar .bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar .bar div {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+/* -----------------------------
+   GROCERY LIST
+------------------------------ */
+.grocery-items .category {
+  margin-bottom: 20px;
+}
+
+.grocery-items ul {
+  list-style: none;
+}
+
+.grocery-items li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.grocery-items input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* -----------------------------
+   FOOTER
+------------------------------ */
 footer {
+  background-color: #4caf50;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
-  background: #2e7d32;
-  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards, .meal-cards {
+    flex-direction: column;
+  }
 }
