@@ -2,84 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meal Planner - Balanced Plate 🥗</title>
+  <title>Meals – Balanced Plate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-  <div class="logo">🥗 Balanced Plate</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="meal.html" class="active">Generate Meal</a></li>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="settings.html">Settings</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+  <div class="logo">Balanced Plate</div>
 </nav>
 
-<!-- MEAL PLANNER SECTION -->
-<section class="meal-section container">
-  <h1>Generate Your Personalized Meal</h1>
-  <p>Enter the ingredients you have and get AI-generated meal suggestions.</p>
+<section class="container">
+  <h2 class="section-title">Meal Automation</h2>
+  <p class="section-sub">
+    Meals are generated via AI logic executed inside n8n workflows.
+  </p>
 
-  <!-- INPUT FORM -->
-  <form id="meal-form">
-    <label for="ingredients">Available Ingredients</label>
-    <textarea id="ingredients" placeholder="E.g., eggs, spinach, oats, chicken" required></textarea>
+  <form class="card" id="mealForm">
+    <label>Available Ingredients</label>
+    <input type="text" placeholder="Comma separated">
 
-    <label for="meal-type">Meal Type</label>
-    <select id="meal-type" required>
-      <option value="">Select Meal Type</option>
-      <option value="Breakfast">Breakfast</option>
-      <option value="Lunch">Lunch</option>
-      <option value="Dinner">Dinner</option>
-      <option value="Snack">Snack</option>
+    <label>Health Goal</label>
+    <select>
+      <option>Balanced</option>
+      <option>Weight Loss</option>
+      <option>Muscle Gain</option>
     </select>
 
-    <label for="diet-type">Diet Type</label>
-    <select id="diet-type" required>
-      <option value="">Select Diet Type</option>
-      <option value="Vegetarian">Vegetarian</option>
-      <option value="Non-Vegetarian">Non-Vegetarian</option>
-      <option value="Vegan">Vegan</option>
-      <option value="Eggetarian">Eggetarian</option>
-    </select>
-
-    <label for="health-goal">Health Goal</label>
-    <select id="health-goal" required>
-      <option value="">Select Health Goal</option>
-      <option value="Balanced">Balanced Diet</option>
-      <option value="Weight Loss">Weight Loss</option>
-      <option value="Weight Gain">Weight Gain</option>
-      <option value="Muscle Gain">Muscle Gain</option>
-      <option value="Diabetes Friendly">Diabetes Friendly</option>
-      <option value="Heart Health">Heart Health</option>
-    </select>
-
-    <button type="submit" class="btn">Generate Meal</button>
+    <button type="submit">Generate Meal</button>
   </form>
-
-  <!-- GENERATED MEAL RESULT -->
-  <div class="generated-meal">
-    <h2>Meal Suggestion</h2>
-    <div class="card">
-      <h3 id="meal-name">Your AI Meal Will Appear Here</h3>
-      <p id="meal-ingredients">Ingredients will be listed here</p>
-      <p id="meal-calories">Calories: 0 kcal</p>
-      <p id="meal-macros">Protein: 0g | Carbs: 0g | Fats: 0g</p>
-      <button class="btn small" id="save-meal-btn">Save Meal</button>
-    </div>
-  </div>
-
 </section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Balanced Plate | Not a medical diagnosis</p>
-  <p><a href="about.html">About</a> | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
-</footer>
 
 <script src="index.js"></script>
 </body>
