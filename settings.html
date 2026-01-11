@@ -2,112 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Settings - Balanced Plate 🥗</title>
+  <title>Settings – Balanced Plate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-  <div class="logo">🥗 Balanced Plate</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="meal.html">Generate Meal</a></li>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="settings.html" class="active">Settings</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+  <div class="logo">Balanced Plate</div>
 </nav>
 
-<!-- SETTINGS SECTION -->
-<section class="settings-section container">
-  <h1>Profile & Settings</h1>
-  <p>Manage your profile, diet preferences, and account settings.</p>
+<section class="container">
+  <h2 class="section-title">Profile Settings</h2>
 
-  <!-- UPDATE PERSONAL INFO -->
-  <div class="settings-card card">
-    <h2>Update Personal Information</h2>
-    <form id="update-profile-form">
-      <label for="update-name">Full Name</label>
-      <input type="text" id="update-name" required>
+  <form class="card">
+    <label>Diet Preference</label>
+    <select>
+      <option>Vegetarian</option>
+      <option>Non-Vegetarian</option>
+      <option>Vegan</option>
+    </select>
 
-      <label for="update-age">Age</label>
-      <input type="number" id="update-age" min="1" required>
+    <label>Health Goal</label>
+    <select>
+      <option>Balanced</option>
+      <option>Weight Loss</option>
+    </select>
 
-      <label for="update-gender">Gender</label>
-      <select id="update-gender" required>
-        <option value="">Select</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Other">Other</option>
-      </select>
-
-      <label for="update-height">Height (cm)</label>
-      <input type="number" id="update-height" min="1" required>
-
-      <label for="update-weight">Weight (kg)</label>
-      <input type="number" id="update-weight" min="1" required>
-
-      <button type="submit" class="btn">Save Changes</button>
-    </form>
-  </div>
-
-  <!-- UPDATE HEALTH GOALS -->
-  <div class="settings-card card">
-    <h2>Update Health Goals & Diet</h2>
-    <form id="update-diet-form">
-      <label for="update-health-goal">Health Goal</label>
-      <select id="update-health-goal" required>
-        <option value="">Select Health Goal</option>
-        <option value="Balanced">Balanced Diet</option>
-        <option value="Weight Loss">Weight Loss</option>
-        <option value="Weight Gain">Weight Gain</option>
-        <option value="Muscle Gain">Muscle Gain</option>
-        <option value="Diabetes Friendly">Diabetes Friendly</option>
-        <option value="Heart Health">Heart Health</option>
-      </select>
-
-      <label for="update-diet-type">Diet Type</label>
-      <select id="update-diet-type" required>
-        <option value="">Select Diet Type</option>
-        <option value="Vegetarian">Vegetarian</option>
-        <option value="Non-Vegetarian">Non-Vegetarian</option>
-        <option value="Vegan">Vegan</option>
-        <option value="Eggetarian">Eggetarian</option>
-      </select>
-
-      <label for="update-allergies">Allergies / Restrictions</label>
-      <input type="text" id="update-allergies" placeholder="E.g., Nuts, Gluten">
-
-      <button type="submit" class="btn">Save Changes</button>
-    </form>
-  </div>
-
-  <!-- CHANGE PASSWORD -->
-  <div class="settings-card card">
-    <h2>Change Password</h2>
-    <form id="change-password-form">
-      <label for="current-password">Current Password</label>
-      <input type="password" id="current-password" required>
-
-      <label for="new-password">New Password</label>
-      <input type="password" id="new-password" required>
-
-      <label for="confirm-password">Confirm New Password</label>
-      <input type="password" id="confirm-password" required>
-
-      <button type="submit" class="btn">Update Password</button>
-    </form>
-  </div>
-
+    <button>Save Changes</button>
+  </form>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Balanced Plate | Not a medical diagnosis</p>
-  <p><a href="about.html">About</a> | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
-</footer>
-
-<script src="index.js"></script>
 </body>
 </html>
