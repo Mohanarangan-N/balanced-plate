@@ -2,75 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Progress Tracking - Balanced Plate 🥗</title>
+  <title>Progress – Balanced Plate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-  <div class="logo">🥗 Balanced Plate</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="meal.html">Generate Meal</a></li>
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="progress.html" class="active">Progress</a></li>
-    <li><a href="settings.html">Settings</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+  <div class="logo">Balanced Plate</div>
 </nav>
 
-<!-- PROGRESS TRACKING SECTION -->
-<section class="progress-section container">
-  <h1>Your Progress</h1>
-  <p>Track your health metrics and meal adherence over time.</p>
+<section class="container">
+  <h2 class="section-title">Progress Tracking</h2>
+  <p class="section-sub">
+    All metrics are derived from stored automation logs.
+  </p>
 
-  <!-- METRICS SUMMARY -->
-  <div class="metrics-summary cards">
+  <div class="cards">
     <div class="card">
-      <h3>Current Weight</h3>
-      <p id="weight">-- kg</p>
+      <h3>Weight Trend</h3>
+      <p>Automated weekly analysis</p>
     </div>
     <div class="card">
-      <h3>BMI</h3>
-      <p id="bmi">--</p>
+      <h3>BMI Status</h3>
+      <p>Calculated dynamically</p>
     </div>
-    <div class="card">
-      <h3>Meal Adherence</h3>
-      <p id="adherence">-- %</p>
-    </div>
-    <div class="card">
-      <h3>Calories Average</h3>
-      <p id="avg-calories">-- kcal</p>
-    </div>
-  </div>
-
-  <!-- TREND CHARTS -->
-  <div class="charts">
-    <h2>Trends</h2>
-    <canvas id="weight-chart" width="400" height="200"></canvas>
-    <canvas id="bmi-chart" width="400" height="200"></canvas>
-    <canvas id="adherence-chart" width="400" height="200"></canvas>
-  </div>
-
-  <!-- AI TIPS -->
-  <div class="ai-tips">
-    <h2>Insights & Recommendations</h2>
-    <ul id="progress-tips">
-      <li>Great job! You followed 80% of your planned meals this week.</li>
-      <li>Consider adding more protein to your lunch for muscle gain.</li>
-      <li>Your BMI is within healthy range, maintain current plan.</li>
-    </ul>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Balanced Plate | Not a medical diagnosis</p>
-  <p><a href="about.html">About</a> | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="index.js"></script>
 </body>
 </html>
